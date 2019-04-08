@@ -4,7 +4,7 @@ GMM EM Algorithem implementation
 
 ## Description
 
-I Created a simple example for Bivariate GMM,which is an nsupervised learning algorithm,and a use case of EM algorithem.
+I Created a simple example for Bivariate GMM,which is an unsupervised learning algorithm,and a use case of EM algorithem.
 It can be used for clustering of data.
 
 ## Getting Started
