@@ -5,7 +5,10 @@ import numpy as np
 from scipy.stats import norm
 from sklearn.datasets.samples_generator import make_blobs
 
+#seed data for reconstruction
 np.random.seed(0)
+
+#create data
 X,Y = make_blobs(cluster_std=1.5,random_state=20,n_samples=500,centers=3)
 # Stratch dataset to get ellipsoid data
 X = np.dot(X,np.random.RandomState(0).randn(2,2))
@@ -137,8 +140,8 @@ def create_pi():
 def Best_config(loses,pis0,mus0,sigmas0):
     best_config=[]
     for key, value in loses.items():
-        min_val = min(list(loses.values()))
-        if value == min_val:
+        max_val = max(list(loses.values()))
+        if value == max_val:
             return loses[key],pis0[key],mus0[key],sigmas0[key]
 
 
