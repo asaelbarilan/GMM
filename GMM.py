@@ -10,7 +10,7 @@ np.random.seed(0)
 
 #create data
 X,Y = make_blobs(cluster_std=1.5,random_state=20,n_samples=500,centers=3)
-# Stratch dataset to get ellipsoid data
+# strech data to ellipsoid
 X = np.dot(X,np.random.RandomState(0).randn(2,2))
 
 # plt.scatter(X[:, 0], X[:, 1], c='grey', s=30)
